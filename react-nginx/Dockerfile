@@ -41,7 +41,7 @@ COPY --from=gloursdocker/docker / /
 CMD [ "npm", "start" ]
 
 # 2. For Nginx setup
-FROM nginx:alpine
+FROM runsafesecurity-docker-alkemist-repo.jfrog.io/nginx:alpine
 
 # Copy config nginx
 COPY --from=build /app/.nginx/nginx.conf /etc/nginx/conf.d/default.conf

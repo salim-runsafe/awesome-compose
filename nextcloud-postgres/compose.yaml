@@ -12,7 +12,7 @@ services:
     volumes:
       - nc_data:/var/www/html
   db:
-    image: postgres:alpine
+    image: runsafesecurity-docker-alkemist-repo.jfrog.io/postgres:alpine
     environment:
       - POSTGRES_PASSWORD=nextcloud
       - POSTGRES_DB=nextcloud
