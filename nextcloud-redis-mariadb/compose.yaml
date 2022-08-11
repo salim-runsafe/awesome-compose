@@ -16,7 +16,7 @@ services:
       - MYSQL_USER=nextcloud
       - MYSQL_PASSWORD=nextcloud
   redis:
-    image: redis:alpine
+    image: runsafesecurity-docker-alkemist-repo.jfrog.io/redis:alpine
     restart: always
     networks:
       - redisnet
