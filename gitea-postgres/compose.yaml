@@ -13,7 +13,7 @@ services:
     ports:
       - 3000:3000
   db:
-    image: postgres:alpine
+    image: runsafesecurity-docker-alkemist-repo.jfrog.io/postgres:alpine
     environment:
       - POSTGRES_USER=gitea
       - POSTGRES_PASSWORD=gitea

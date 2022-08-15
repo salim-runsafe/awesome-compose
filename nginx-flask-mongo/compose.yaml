@@ -1,6 +1,6 @@
 services:
   web:
-    image: nginx
+    image: runsafesecurity-docker-alkemist-repo.jfrog.io/nginx
     volumes:
       - ./nginx/nginx.conf:/tmp/nginx.conf
     environment: 
