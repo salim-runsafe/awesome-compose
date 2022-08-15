@@ -1,6 +1,6 @@
 services:
   proxy:
-    image: nginx
+    image: runsafesecurity-docker-alkemist-repo.jfrog.io/nginx
     volumes:
       - type: bind
         source: ./proxy/nginx.conf
